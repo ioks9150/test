@@ -14,8 +14,13 @@ ul,li{list-style: none;}
     width: 100%;
     height: 89px;
     position: fixed;
-    background-color: #fff;
+    background-color: transparent;
     z-index: 9999;
+    transition: all 0.7s;
+}
+#header.on{
+    background-color: #fff;
+    transition: all 0.7s;
     box-shadow: 5px 0px 10px rgba(0,0,0,0.2);
 }
 #headerin{
@@ -34,7 +39,7 @@ ul,li{list-style: none;}
 .gnb{
     float: left;
     width: 45%;
-    margin-left: 30%;
+    margin-left: 20%;
     height: 89px;
     font-weight: 700;
 }
@@ -61,13 +66,13 @@ ul,li{list-style: none;}
     font-size:1.7rem;
     font-weight: 500;
     line-height: 89px;
+    color:#fff;
 }
-.mainmenu>li>a.on{
-    color:red;
-    color:#022b7f;
+#header.on .mainmenu>li>a{
+    color:#222;
 }
 .mainmenu>li>a:hover{
-    color:#022b7f;
+    opacity: 0.3;
     transition: all 0.7s;
 }
 .mainmenu>li:first-child{
@@ -87,7 +92,7 @@ ul,li{list-style: none;}
     background-color: #fff;
     top:80px;
     left:-10%;
-    border:1px solid #0b3081;
+    border:1px solid #ccc;
 /*    box-sizing: border-box;*/
     box-shadow: 1px 7px 10px rgba(0,0,0,0.3);
 }
@@ -103,7 +108,7 @@ ul,li{list-style: none;}
     display: block;
     width: 90%;
     height: 1px;
-    background-color: #0b3081;
+    background-color: #ccc;
     z-index: 999;
     top:50px;
     left:1%;
@@ -131,7 +136,7 @@ ul,li{list-style: none;}
 
 .info{
     float: right;
-    width: 100px;
+    width: 118px;
     height: 89px;
 }
 .info:after{
@@ -146,7 +151,7 @@ ul,li{list-style: none;}
     float: left;
 }
 .info .location{
-    width: 49px;
+    width: 50px;
     margin-right: 2%;
     position: relative;
 }
@@ -154,7 +159,7 @@ ul,li{list-style: none;}
     content: "";
     position: absolute;
     top:27px;
-    left:52px;
+    left:58px;
     display: inline-block;
     width: 1px;
     height: 35px;
@@ -162,7 +167,7 @@ ul,li{list-style: none;}
     margin-right: 0;
 }
 .info .phone{
-    width: 49px;
+    width: 65px;
 }
 .info a>i>img{
     padding-top: 25px;
@@ -170,18 +175,24 @@ ul,li{list-style: none;}
 
 #main{
     width: 100%;
-    height: 652px;
+    height: 891px;
     position: relative;
 }
 #main .slider{
     width: 100%;
-    height: 652px;
+    height: 891px;
     background-image: url(../images/mainimg.jpg);
     background-position: center center;
 }
+#main .slider2{
+    background-image: url(../images/mainimg2.jpg);
+}
+#main .slider3{
+    background-image: url(../images/mainimg3.jpg);
+}
 .maintxtbox{
     position: absolute;
-    top:319px;
+    top:430px;
     left:20%;
     right:20%;
     margin: 0 auto;
@@ -200,7 +211,7 @@ ul,li{list-style: none;}
 }
 #main .pager{
     position: absolute;
-    top:600px;
+    bottom:50px;
     left:10%;
     right:10%;
     width: 56px;
@@ -259,26 +270,34 @@ ul,li{list-style: none;}
     font-family: 'Roboto', sans-serif;
 }
 .con1in ul li:first-child{
-    width: 49%;
+/*    width: 49%;*/
 }
-.con1in ul li i img{
+.con1in>ul li i{
+    display: inline-block;
+    height: 78px;
+    width: 50px;
+}
+.con1in>ul li i img{
+    margin-top: -10px;
+    margin-right: 25px;
     vertical-align: middle;
-    margin-right: 20px;
+}
 }
 
 /*----------------------------------------------------------*/
 
 .txtbox{
-    text-align: center;
 }
 .txtbox .tit{
     padding-top:120px;
     font-size:4.8rem;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 .txtbox .txt{
 /*    padding:10px 0 0 0;*/
     font-size:2.4rem;
+    text-align: center;
 }
 
 
@@ -321,7 +340,8 @@ ul,li{list-style: none;}
     border:5px solid #022b7f;
     transition: all 0.7s;
 }
-.con2 ul li a img{
+.con2 ul li a:hover span{
+    color: #022b7f;
 }
 .con2 ul li a span{
     display: block;
@@ -341,6 +361,7 @@ ul,li{list-style: none;}
     margin-top:15px;
     font-size:1.6rem;
     font-weight: 300;
+    text-align: center;
 }
 .con3{
     width: 100%;
@@ -358,6 +379,7 @@ ul,li{list-style: none;}
     width: 80%;
     margin: 0 auto;
     margin-top: 77px;
+    
 }
 .con3in .post-slider:after{
     display: block;
@@ -369,8 +391,8 @@ ul,li{list-style: none;}
     width: 30%;
     height: 450px;
     margin-right: 2%;
-    background-color: #fff;
-    box-shadow: 5px 5px 10px rgba(0,0,0,1);
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 .con3in .post-slider .post:last-child{
     margin-right: 0;
@@ -402,13 +424,28 @@ ul,li{list-style: none;}
     margin-top: 5px;
     font-size: 16px;
     font-weight: 300;
-    color:#aba9a9;
+    color:#222;
 }
 .con3in .post-slider .post>a .line{
     display: inline-block;
-    width: 40px;
-    height: 3px;
+    position: relative;
+    width: 85%;
+    height: 2px;
+    background-color: transparent;
+}
+.con3in .post-slider .post>a .line .bl{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 2px;
     background-color: #022b7f;
+    transition: all 0.7s;
+}
+.con3in .post-slider .post>a:hover .line .bl{
+    width: 100%;
+    transition: all 0.7s;
 }
 .con3in .post-slider .post>a i{
     font-size: 14px;
@@ -419,44 +456,20 @@ ul,li{list-style: none;}
 
 .post-t .next{
   position:absolute;
+    display: block;
   top:50%;
   right:30px;
-  font-size: 3rem;
-    font-weight: 200;
-  color:gray;
-  cursor: pointer;
-    z-index: 99;
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #ccc;
-    text-align: center;
-    line-height: 50px;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-}
-.post-slider .prev{
-  position:absolute;
-  top:50%;
-  left:30px;
-  font-size: 3rem;
-    font-weight: 200;
-  color:gray;
     cursor: pointer;
     z-index: 99;
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #ccc;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    line-height: 50px;
-    font-style: normal;
 }
-
-
+.post-t .prev{
+  position:absolute;
+    display: block;
+  top:50%;
+  left:30px;
+    cursor: pointer;
+    z-index: 99;
+}
 
 
 
@@ -495,22 +508,27 @@ ul,li{list-style: none;}
 /*    margin: 35px 0 0 2%;*/
 }
 .con4 .txtbox{
-    text-align: left;
 }
 .con4 .txtbox>span{
-    font-size:20px;
+    font-size:2.0rem;
     font-weight: 500;
     color:#cccccc;
     font-family: 'Roboto', sans-serif;
+    text-align: left;
 }
 .con4 .txtbox .tit{
     padding-top:0px;
     font-size:4.8rem;
     font-family: 'Roboto', sans-serif;
+    text-align: left;
 }
 .con4 .txtbox .txt{
 /*    padding:10px 0 0 0;*/
     font-size:2.4rem;
+    text-align: left;
+}
+.con4 .txtbox .txt2{
+    text-align: left;
 }
 .con4right .buttonbox{
     margin-top: 66px;
@@ -539,7 +557,7 @@ ul,li{list-style: none;}
     clear: both;
 }
 .con4right .buttonbox span{
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #022b7f;
     font-weight: 300;
     margin-left: 5%;
@@ -566,15 +584,16 @@ ul,li{list-style: none;}
 .con5in{}
 .con5 .txtbox{
     color:#fff;
+    text-align: center;
 }
 .con5 .txtbox .tit{
     color:#fff;
-    font-size:46px;
+    font-size:4.6rem;
     padding-top:80px;
 }
 .con5 .txtbox .txt{
     color:#fff;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 .con5 .txtbox button{
     background-color: transparent;
@@ -583,7 +602,7 @@ ul,li{list-style: none;}
     color:#fff;
     width: 240px;
     height: 50px;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 300;
     text-align: center;
     line-height: 50px;
@@ -596,7 +615,6 @@ ul,li{list-style: none;}
 .con6{
     width: 100%;
     height: 550px;
-    background-color: #efefef;
 }
 .con6in{
     width: 1280px;
@@ -621,18 +639,20 @@ ul,li{list-style: none;}
     float:left;
     width: 35%;
     margin: 35px 0 0 2%;
+    
 }
 .con6 .txtbox{
-    text-align: left;
 }
 .con6 .txtbox .tit{
     padding-top:0px;
     font-size:4.8rem;
     font-family: 'Roboto', sans-serif;
+    text-align: left;
 }
 .con6 .txtbox .txt{
 /*    padding:10px 0 0 0;*/
     font-size:2.4rem;
+    text-align: left;
 }
 .con6 .textbox{
     margin-top: 20px;
@@ -681,16 +701,154 @@ address{
     margin-top: 35px;
 }
 .top{
+    display: block;
     float:right;
     margin-top: 42.5px;
+    border-radius: 50%;
+}
+.top:hover{
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.5)
 }
 
 
 
 
 
-
-
+@media (max-width:1279px){
+    
+    
+    #headerin,.con1in,.con2in,.con3in,.con4in,.con5in,.con6in,.footerin{
+        width: 100%;
+    }
+    #header{
+        height: 78px;
+    }
+    #logo{
+        margin-top: 20px;
+        margin-left: 2%;
+    }
+    .gnb{
+        display: none;
+    }
+    .info{
+        height: 78px;
+    }
+    .info a{
+        line-height: 0;
+    }
+    .info a>i>img{
+        padding-top: 20px;
+    }
+    .info .location:after{
+        top:23px;
+    }
+    
+    
+    
+    
+    
+    .maintxtbox{
+        top:45%;
+    }
+    .maintxtbox h3{
+        font-size:5.6rem;
+    }
+    .maintxtbox p{
+        margin-top: 20px;
+    }
+    
+    
+    
+    .txtbox .tit{
+        font-size: 3.6rem;
+    }
+    .txtbox .txt{
+        font-size: 1.8rem;
+    }
+    
+    
+    
+    .con3in .post-slider .post>a .img{
+        height: 52%;
+    }
+    
+    .con4{
+        height: 1000px;
+    }
+    .con4box{
+        position: inherit;
+        padding-top: 0;
+    }
+    .con4left{
+        width: 100%;
+        height: 500px;
+    }
+    .con4right{
+        position: inherit;
+        float: none;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+    .con4 .txtbox .tit{
+        font-size: 3.6rem;
+    }
+    .con4 .txtbox .txt{
+        font-size: 1.8rem;
+    }
+    .con4right .buttonbox{
+        margin-top: 8%;
+    }
+    .con4right .buttonbox a{
+        width: 100%;
+    }
+    
+    
+    .con5 .txtbox .tit{
+    font-size:3.6rem;
+}
+.con5 .txtbox .txt{
+    font-size: 1.6rem;
+}
+.con5 .txtbox button{
+    font-size: 1.6rem;
+}
+    
+    
+    
+    .con6{
+        height: 800px;
+    }
+    #map{
+        width: 100%;
+        height: 500px;
+        display: block;
+    }
+    .con6right{
+        float: none;
+        width: 100%;
+    }
+    .con6 .textbox{
+        float:left;
+    }
+    .con6 .textbox{
+        float: left;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
 
 
 
