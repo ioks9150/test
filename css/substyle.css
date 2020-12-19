@@ -1,0 +1,217 @@
+#submain{
+    width: 100%;
+    height: 510px;
+    position: relative;
+}
+#submain.subimg1{
+    width: 100%;
+    height: 510px;
+    background-image: url(../images/mainimg.jpg);
+    background-position: center center;
+}
+
+.maintxtbox{
+    position: absolute;
+    top:235px;
+    left:20%;
+    right:20%;
+    margin: 0 auto;
+    color:#ffffff;
+}
+.maintxtbox h3{
+    font-size: 7.2rem;
+    color:#fff;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.maintxtbox p{
+    font-size: 2.4rem;
+    color:#ffffff;
+    text-align: center;
+}
+
+
+
+
+#subcontents{
+    width: 100%;
+}
+.subcon1{
+    width: 100%;
+    height: 60px;
+    background-color: #022b7f;
+}
+.subcon1in{
+    width: 1280px;
+    margin: 0 auto;
+}
+.subcon1in>ul{
+    width: 50%;
+}
+.subcon1in>ul:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.subcon1in>ul>li{
+    float:left;
+    height: 60px;
+    line-height: 60px;
+    margin-right: 2%;
+}
+.subcon1in>ul .right{
+    vertical-align: middle;
+}
+.subcon1in>ul>li>a{
+    color:#fff;
+    font-size: 1.8rem;
+    line-height: 60px;
+    font-weight: 500;
+}
+.subcon1in>ul>li>a:nth-child(2){
+    font-family: 'Roboto', sans-serif;
+}
+.subcon1in>ul .home{
+    width: 60px;
+    height: 60px;
+    display: block;
+    text-align: center;
+}
+.subcon1in>ul .home>img{
+    line-height: 60px;
+    vertical-align: text-top;
+}
+
+
+.subcon2{
+    width: 100%;
+    height: 760px;
+    position: relative;
+}
+.subcon2in{
+    width: 1280px;
+    margin: 0 auto;
+    position: absolute;
+    left:0%;
+    right: 0%;
+    z-index: 2;
+}
+.subcon2in:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.subcon2left{
+    float: left;
+    margin-top: 190px;
+    margin-left: 20px;
+}
+.subcon2left h3{
+    font-size: 3.2rem;
+    color:#022b7f;
+}
+.subcon2left p{
+    margin-top: 125px;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.subcon2left .ceo{
+    display: inline-block;
+    margin-top: 45px;
+    font-size:2.8rem;
+    font-weight: 700;
+}
+.subcon2left .ceo>span{
+    font-size:3.6rem;
+}
+.subcon2right{
+    float: right;
+    margin-top: 90px;
+}
+.subcon2bg{
+    position: absolute;
+    bottom: 67px;
+    left: 0;
+    width: 100%;
+    height: 343px;
+    z-index: 1;
+    background-color: #efefef;
+}
+
+
+.subcon3{
+    width: 100%;
+    height: 644px;
+}
+.subcon3in{
+    width: 1280px;
+    margin: 0 auto;
+}
+.subcon3in .textbox{
+    padding-top:70px;
+    text-align: center;
+}
+.subcon3in .textbox h3{
+    font-size: 3.4rem;
+    color:#022b7f;
+    font-weight: 300;
+}
+.subcon3in .textbox p{
+    font-size:2.4rem;
+    font-weight: 300;
+    margin-bottom: 27px;
+}
+
+.subcon3in .list{
+    width: 1081px;
+    margin: 0 auto;
+    border-top: 3px solid #022b7f;
+    border-bottom: 3px solid #022b7f;
+}
+.subcon3in .list:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.subcon3in .list li{
+    float:left;
+    font-size:1.8rem;
+    font-weight: 300;
+    height: 55px;
+    line-height: 55px;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.subcon3in .list li:nth-child(11),.subcon3in .list li:nth-child(12){
+    border-bottom: 0;
+}
+.subcon3in .list .tt{
+    width: 40%;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.subcon3in .list .tx .en{
+    font-size:1.8rem;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+.subcon3in .list .tx{
+    width: 60%;
+    text-align: left;
+    padding-left: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
