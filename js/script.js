@@ -9,7 +9,7 @@ $('#fullpage').fullpage({
 //풀페이지 기본값에는 페이저버튼이 나타나지 x 
     'navigationPosition':'right',
 //네비게이션 위치
-    'navigationTooltips' :['main','me','Web','Visual Design','Editorial Design'],
+    'navigationTooltips' :['Main','Profile','Web','Visual Design','Editorial Design'],
 //네비게이션에 섹션에 관한 캡션을 넣는 부분
     'afterLoad' : function(i,f,d){
                     //인덱스, 목적지, 방향
@@ -37,4 +37,38 @@ $('#fullpage').fullpage({
 });
 
 
+    $('.text').mouseover(function(){
+        $(this).siblings('.img').css({
+            display : 'block'
+        });
+    });
+    $('.text').mouseout(function(){
+        $(this).siblings('.img').css({
+            display : 'none'
+        });
+    });
+    
+    
+     $('#sec03 .left>a').mouseover(function(){
+        $(this).parent().siblings('.right').find('.cir').css({
+            transform : 'translateX(-5%)'
+        });
+    });
+    $('#sec03 .left>a').mouseout(function(){
+        $(this).parent().siblings('.right').find('.cir').css({
+            transform : 'translateX(-90%)'
+        });
+    });
+       
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 });
