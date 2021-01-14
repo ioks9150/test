@@ -13,12 +13,13 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/fullpage.js"></script>
     <script src="js/script.js"></script>
+    <script src="jquery.fade-in.js"></script>
 </head>
 
 <body>
     <div id="wrap">
         <header id="header">
-            <h1 class="logo"><a href="#">PORTFOLIO</a></h1>
+            <h1 class="logo"><a href="#">HOME</a></h1>
             <button id="button">
                 <span class="line1"></span>
                 <span class="line2"></span>
@@ -44,30 +45,74 @@
         </header>
         <div id="fullpage">
             <div class="section" id="sec01">
-                <div class="f_inner"></div>
-                <div class="pagebox">
-                      <div class="pagetext"><span class="number">1</span>/3</div>
-                </div>
+                <div class="container"></div>
+                <div class="f_nav"></div>
             </div>
             <div class="section" id="sec02">
-                <div class="f_inner"></div>
-                <div class="pagebox">
-                    <div class="pagetext"><span class="number">2</span>/3</div>
-                </div>
+                <div class="container"></div>
+            </div>
+            <div class="section" id="sec02">
+                <div class="container"></div>
             </div>
             <div class="section" id="sec03">
-                <div class="f_inner">
-                    <ul class="list">
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
+                <div class="container">
+                    <ul>
+                        <li class="list col-md-6 fade-in" ><a href="#">
+                                <div class="textbox">
+                                    <h3 class="animated fadeInLeft" data-settings="{"_animation":"fadeInLeft"}">WEB DESGIN</h3>
+                                    <p>웹 디자인</p>
+                                    <span class="line">
+                                        <span></span>
+                                    </span>
+                                    <span>MORE VIEW</span>
+                                </div>
+                                <div class="imgbox">
+                                    <div class="img"></div>
+                                </div>
+                            </a></li>
+                        <li class="list"><a href="#">
+                                <div class="textbox">
+                                    <h3>SHOPPING MALL</h3>
+                                    <p>쇼핑몰</p>
+                                    <span class="line">
+                                        <span></span>
+                                    </span>
+                                    <span>MORE VIEW</span>
+                                </div>
+                                <div class="imgbox">
+                                    <div class="img"></div>
+                                </div>
+                            </a></li>
+                        <li class="list"><a href="#">
+                                <div class="textbox">
+                                    <h3>VISUAL DESGIN</h3>
+                                    <p>비주얼 디자인</p>
+                                    <span class="line">
+                                        <span></span>
+                                    </span>
+                                    <span>MORE VIEW</span>
+                                </div>
+                                <div class="imgbox">
+                                    <div class="img"></div>
+                                </div>
+                            </a></li>
+                        <li class="list"><a href="#">
+                                <div class="textbox">
+                                    <h3>EDITORIAL DESGIN</h3>
+                                    <p>편집 디자인</p>
+                                    <span class="line">
+                                        <span></span>
+                                    </span>
+                                    <span>MORE VIEW</span>
+                                </div>
+                                <div class="imgbox">
+                                    <div class="img"></div>
+                                </div>
+                            </a></li>
                     </ul>
                 </div>
-                <div class="pagebox">
-                    <div class="pagetext"><span class="number">3</span>/3</div>
-                </div>
             </div>
+            
         </div>
     </div>
 </body>

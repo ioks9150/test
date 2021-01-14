@@ -21,24 +21,33 @@ a{text-decoration: none; color:#222;}
 }
 .logo{
     position: absolute;
-    left:-1.5%;
-    top:130px;
-    transform: rotate(-90deg);
+    left:5%;
+    top:50px;
+    transform: rotate(45deg);
 }
 .logo>a{
     display: block;
-    width: 220px;
-    height: 60px;
+    width: 60px;
+    height: 30px;
     background-color: blue;
     border-radius: 30px;
     font-size: 2.4rem;
     color:#fff;
     text-align: center;
     line-height: 60px;
+    text-indent: -9999px;
+    transition: all 0.5s;
 /*    font-family: 'Roboto', sans-serif;*/
 }
+.logo:hover{
+    transform: rotate(0deg);
+    transition: all 0.5s;
+}
 .logo>a:hover{
-    background-color: black;
+/*    background-color: black;*/
+    height: 60px;
+    text-indent: 0;
+    font-size: 1.6rem;
 }
 
 #button{
@@ -105,13 +114,9 @@ a{text-decoration: none; color:#222;}
     background-color: #fff;
     transition: all 0.5s;
 }
-#fp-nav{
-    opacity: 0;
-}
-
-.f_inner{
-    width:1560px;
-    height: 100%;
+.container{
+    width:80%;
+    height: 100vh;
     margin: 0 auto;
     background-color: antiquewhite;
 }
@@ -153,24 +158,117 @@ a{text-decoration: none; color:#222;}
 }
 #sec03{
 /*    background: url(../../PAPA.png);*/
-    background-color: #0033cc;
     transition: all 0.5s;
 }
-#sec03 .list{
+#sec03 ul{
     width: 100%;
-    height: 100%
+    height: 100vh;
 }
-#sec03 .list:after{
+#sec03 ul:after{
     display:block;
     content: "";
     clear: both;
 }
-#sec03 .list li{
+#sec03 .list{
     float:left;
     width: 50%;
     height: 50%;
-    background-color: aqua
 }
+#sec03 .list>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+#sec03 .list>a .textbox{
+    width: 100%;
+    margin-top: 20%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 99;
+}
+#sec03 .list>a .textbox>h3{
+    font-size:3.6rem;
+    font-weight: 700;
+    color:#fff;
+    margin-top: 5%;
+    transition: all 0.5s;
+}
+#sec03 .list>a .textbox>p{
+    font-size:1.8rem;
+    font-weight: 600;
+    color:#fff;
+    opacity: 0;
+    transition: all 0.5s;
+}
+#sec03 .list>a .textbox>span{
+    font-size:1.5rem;
+    font-weight: 400;
+    color:#fff;
+    transition: all 0.5s;
+    opacity: 0;
+    display: none;
+}
+#sec03 .list>a .textbox>.line{
+    width: 5%;
+    height: 1px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 20%;
+    margin-bottom: 1%;
+    opacity: 0;
+}
+#sec03 .list>a .imgbox{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 9;
+    background-color: #3333cc;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+#sec03 .list>a .imgbox>.img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0.2;
+    z-index: 9;
+    background: url(../images/test.jpg);
+    background-position: center auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sec03 .list>a:hover .textbox>h3{
+    margin-top: 0%;
+}
+#sec03 .list>a:hover .textbox>p{
+    opacity: 1;
+}
+#sec03 .list>a:hover .textbox>span{
+    opacity: 1;
+    display: block;
+}
+#sec03 .list>a:hover .textbox>.line{
+    display: block;
+}
+#sec03 .list>a:hover .imgbox{
+    background-color: #111111;
+}
+#sec03 .list>a:hover .imgbox>.img{
+    transition: all 0.5s;
+    transform: scale(1.1)
+}
+
+
+
 
 
 

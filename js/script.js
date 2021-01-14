@@ -36,31 +36,6 @@ $('#fullpage').fullpage({
 
 });
 
-
-    $('.text').mouseover(function(){
-        $(this).siblings('.img').css({
-            display : 'block'
-        });
-    });
-    $('.text').mouseout(function(){
-        $(this).siblings('.img').css({
-            display : 'none'
-        });
-    });
-    
-    
-     $('#sec03 .left>a').mouseover(function(){
-        $(this).parent().siblings('.right').find('.cir').css({
-            transform : 'translateX(-5%)'
-        });
-    });
-    $('#sec03 .left>a').mouseout(function(){
-        $(this).parent().siblings('.right').find('.cir').css({
-            transform : 'translateX(-90%)'
-        });
-    });
-       
-    
     
     
     
