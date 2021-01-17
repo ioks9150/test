@@ -157,6 +157,10 @@
             responsive: 0, //backwards compabitility with responsiveWiddth
             responsiveWidth: 0,
             responsiveHeight: 0,
+            
+//responsiveWidth: 가로값이상시 풀페이지효과 삭제
+//responsiveHeight: 세로값이상시 풀페이지효과 삭제
+            
             responsiveSlides: false,
             parallax: false,
             parallaxOptions: {

@@ -29,7 +29,7 @@ a{text-decoration: none; color:#222;}
     display: block;
     width: 60px;
     height: 30px;
-    background-color: blue;
+    background-color: #0033cc;
     border-radius: 30px;
     font-size: 2.4rem;
     color:#fff;
@@ -118,7 +118,7 @@ a{text-decoration: none; color:#222;}
     width:80%;
     height: 100vh;
     margin: 0 auto;
-    background-color: antiquewhite;
+/*    background-color: antiquewhite;*/
 }
 .section{
     position: relative;
@@ -156,8 +156,16 @@ a{text-decoration: none; color:#222;}
 /*    background-color: pink;*/
     transition: all 0.5s;
 }
+#sec02 h1{
+    font-size:160px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 #sec03{
-/*    background: url(../../PAPA.png);*/
     transition: all 0.5s;
 }
 #sec03 ul{

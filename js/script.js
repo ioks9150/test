@@ -38,10 +38,15 @@ $('#fullpage').fullpage({
 
     
     
+ $('#fullpage #sec03.active').parents().siblings('#header').find('.logo>a').css({
+     backgroundColor : 'red'
+ })   
     
     
-    
-    
+    $('#target1').waypoint(function() {
+    $('#target1').addClass('animated fadeInDown');
+}, { offset: '100%' });
+
     
     
     
