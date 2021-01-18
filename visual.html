@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <link rel="shortcut icon" href="images/favicon.png" />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href='css/clear.css' />
     <link rel="stylesheet" type="text/css" href='css/common.css' />
     <link rel="stylesheet" type="text/css" href='css/font-awesome.min.css' />
@@ -50,61 +50,88 @@
 
 
     <div class="body-wrapper">
-        <div class="content-1330 header-holder center-relative">
-            <div class="header-logo left">
+           <header id="header">           
+            <div class="content-header center-relative">
+                <div class="header-logo left">
+                    <h1 class="site-title">
+                        <a href="index.html">
+                            HOME
+                        </a>               
+                    </h1>
 
-                <h1 class="site-title">
-                    <a href="index.html">
-                        <img src="images/sunDefaultLogo.png" alt="Sun-">
-                    </a>
-                </h1>
+                </div>
 
-            </div>
-
-            <div class="header-menu right">
-                <nav id="header-main-menu" class="left">
-                    <ul class="main-menu sm sm-clean">
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="about.html">About</a>
-                        </li>
-                        <li>
-                            <a href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="visual.html">visual</a>
-                        </li>
-                        <li>
-                            <a href="editorial.html">Editorial</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="toggle-holder relative right">
-                    <div id="toggle">
-                        <i class="fa fa-search"></i>
-                    </div>
+                <div class="header-menu right">
+                    <nav id="header-main-menu">
+                        <ul class="main-menu sm sm-clean">
+                            <li>
+                                <a href="index.html">HOME</a>
+                            </li>
+                            <li>
+                                <a href="about.html">ABOUT</a>
+                            </li>
+                            <li>
+                                <a href="web_project1.html">WEB</a>
+                            </li>
+                            <li>
+                                <a href="visual.html">VISUAL</a>
+                            </li>
+                            <li>
+                                <a href="bici.html">BI/CI</a>
+                            </li>
+                            <li class="sm-clean2">
+                                <a href="editorial.html">EDITORIAL</a>
+                            </li>
+                        </ul>
+<!--
+                        <div class="m_button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <ul class="m_menu">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+                            <li>
+                                <a href="web_project1.html">Web</a>
+                            </li>
+                            <li>
+                                <a href="single.html">shoppingmall</a>
+                            </li>        
+                            <li>
+                                <a href="visual.html">Visual</a>
+                            </li>
+                            <li>
+                                <a href="editorial.html">Editorial</a>
+                            </li>
+                        </ul>
+-->
+                    </nav>							
                 </div>
                 <div class="clear"></div>
             </div>
-            <div class="clear"></div>
-        </div>
+            </header>
 
         <div id="content" class="site-content">
             <article>
                 <div class="content-1330 center-relative">
-                    <div class="page-desc">
-                        visual
-                    </div>
-                    <div class="clear"></div>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
+                    <div class="tit-box">
+<!--                        <img src="demo-images/sun_about_image01.jpg" alt="">-->
+                            
+                        <h3 class="tit">VISUAL</h3>
+                        <p class="txt">비주얼 디자인</p>
+                        </div>
+                    
+                    
                     <div class="button-group filters-button-group">
                         <div class="button is-checked" data-filter="*">All</div>
-                        <div class="button" data-filter=".businesscard">businesscard</div>
-                        <div class="button" data-filter=".leaflet">leaflet</div>
-                        <div class="button" data-filter=".print">print</div>
+                        <div class="button" data-filter=".businesscard">cardnews</div>
+                        <div class="button" data-filter=".leaflet">detailpage</div>
+                        <div class="button" data-filter=".print">banner</div>
                         <div class="button" data-filter=".package">package</div>
                     </div>
                     <div class="grid" id="portfolio">
@@ -201,29 +228,14 @@
         <!--Footer-->
 
         <footer class="footer">
-            <div class="content-1330 center-relative">
+            <div class="content-1530 center-relative">
                 <ul>
                     <li class="left-footer-content">
-                        © 2018 Sun HTML Template. Crafted with <i class="fa fa-heart"></i> by <a href="http://drythemes.com">DryThemes</a>.
+                        Kim Eun Jeong . Portfolio 2020 - 2021
                     </li>
-                    <li class="center-footer-content">
-                        <a href="index.html">
-                            <img src="images/sunDefaultLogoFooter.png" alt="Sun-">
-                        </a>
-                    </li>
-                    <li class="right-footer-contnet">
-                        <a href="#">Twitter</a>
-                        <a href="#">Linkedin</a>
-                        <a href="#">Dribbble</a>
-                        <a href="#">Instagram</a>
-                    </li>
-                    <li class="left-footer-content mobile">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;<script>
-                            document.write(new Date().getFullYear());
-
-                        </script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    
+                    <li class="right-footer-content">
+                       <a href="#"><img src="images/top_btn.png" alt="위로"></a>
                     </li>
                 </ul>
             </div>

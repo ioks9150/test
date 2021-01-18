@@ -8,12 +8,8 @@
 }
 .sm-clean a, .sm-clean a:hover, .sm-clean a:focus, .sm-clean a:active {
     font-size: 18px;
-    font-weight: normal;
     line-height: 85px;
     text-decoration: none;
-}
-.sm-clean a.current {
-    color: #d23600;
 }
 .sm-clean a.disabled {
     color: #bbbbbb;
