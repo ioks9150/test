@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <link rel="shortcut icon" href="images/favicon.png" />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href='css/clear.css' />
     <link rel="stylesheet" type="text/css" href='css/common.css' />
     <link rel="stylesheet" type="text/css" href='css/font-awesome.min.css' />
@@ -27,21 +27,17 @@
 </head>
 
 <body class="page">
+        <table class="doc-loader">
+            <tbody>
+                <tr>
+                    <td class="loader">                  
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!--   화면로딩   -->
 
-    <table class="doc-loader">
-        <tbody>
-            <tr>
-                <td>
-                    <img src="images/ajax-document-loader.gif" alt="Loading...">
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <!--   화면로딩   -->
-
-
-
-    <div class="body-wrapper">
+ <div class="body-wrapper">
         <header id="header">
             <div class="content-header center-relative">
                 <div class="header-logo left">
@@ -57,22 +53,22 @@
                     <nav id="header-main-menu">
                         <ul class="main-menu sm sm-clean">
                             <li>
-                                <a href="index.html">Home</a>
+                                <a href="index.html">HOME</a>
                             </li>
                             <li>
-                                <a href="about.html">About</a>
+                                <a href="about.html">ABOUT</a>
                             </li>
                             <li>
-                                <a href="web_project1.html">Web</a>
+                                <a href="web.html">WEB</a>
                             </li>
                             <li>
-                                <a href="visual.html">Visual</a>
+                                <a href="visual.html">VISUAL</a>
                             </li>
                             <li>
-                                <a href="bici.html">BI/CI</a>
+                                <a href="bici.html" class="current">BI/CI</a>
                             </li>
                             <li>
-                                <a href="editorial.html">Editorial</a>
+                                <a href="editorial.html">EDITORIAL</a>
                             </li>
                         </ul>
                         <!--
@@ -108,36 +104,28 @@
             </div>
         </header>
 
-        <div id="content" class="site-content">
-            <article class="bg">
+        <div id="content" class="site-content webcontent">
+            <article class="bg2">
                 <div class="content-img center-relative">
-                    <div class="tit-box">
+                    <div class="titbox2">
                         <!--                        <img src="demo-images/sun_about_image01.jpg" alt="">-->
 
-                        <h3 class="tit">WEB</h3>
-                        <p class="txt">제작기간 : ㅇㅇㅇㅇ</p>
+                        <p class="contxt2">P R O J E C T 01</p>
+                        <h3 class="tit contit">오드 스튜디오</h3>
+                        <p class="txt contxt">제작기간 : 2주<br>디자인 / 기획</p>
+                        <p class="contxt3">신규 디자인</p>
                     </div>
                 </div>
 
-                <div class="content-1530 center-relative block  p100">
-                    <img src="demo-images/home_img_01.jpg" alt="해녀박물관">
+                <div class="content-1530 center-relative block p100">
+                    <img src="demo-images/oddstudio_page.jpg" alt="오드스튜디오">
                 </div>
 
+<!--
                 <div class="content-1330 center-relative block p50">
-                    <a href="#" target="_self" class="button sitebtn">SITE VIEW</a>
+                    <a href="https://ioks9150.github.io/project2/" target="_self" class="button sitebtn">SITE VIEW</a>
                 </div>
-
-                <div class="nav-links">
-                    <div class="nav-previous">
-                        <p class="nav-previous-text">PREVIOUS STORY</p>
-                        <a href="#" rel="prev">Two ghostly white figures in coveralls</a>
-                    </div>
-                    <div class="nav-next">
-                        <p class="nav-next-text">NEXT STORY</p>
-                        <a href="#" rel="next">I had made a valuable acquisition</a>
-                    </div>
-                    <div class="clear"></div>
-                </div>
+-->
 
             </article>
         </div>
@@ -145,29 +133,14 @@
         <!--Footer-->
 
         <footer class="footer">
-            <div class="content-1330 center-relative">
+            <div class="content-1530 center-relative">
                 <ul>
                     <li class="left-footer-content">
-                        © 2018 Sun HTML Template. Crafted with <i class="fa fa-heart"></i> by <a href="http://drythemes.com">DryThemes</a>.
+                        Kim Eun Jeong . Portfolio 2020 - 2021
                     </li>
-                    <li class="center-footer-content">
-                        <a href="index.html">
-                            <img src="images/sunDefaultLogoFooter.png" alt="Sun-">
-                        </a>
-                    </li>
-                    <li class="right-footer-contnet">
-                        <a href="#">Twitter</a>
-                        <a href="#">Linkedin</a>
-                        <a href="#">Dribbble</a>
-                        <a href="#">Instagram</a>
-                    </li>
-                    <li class="left-footer-content mobile">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;<script>
-                            document.write(new Date().getFullYear());
-
-                        </script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    
+                    <li class="right-footer-content">
+                       <a href="#"><img src="images/top_btn.png" alt="위로"></a>
                     </li>
                 </ul>
             </div>

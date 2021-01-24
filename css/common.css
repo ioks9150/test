@@ -206,7 +206,7 @@
 }
 blockquote
 {
-    border-left: 10px solid #FD3137;
+    border-left: 10px solid #2924ef;
     padding-left: 60px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -239,8 +239,8 @@ iframe
 a.button
 {
     display: block;
-    color: #FD3137;
-    border: 3px solid #FD3137;
+    color: #2924ef;
+    border: 3px solid #2924ef;
     text-align: center;
     padding: 15px 40px;
     cursor: pointer;
@@ -249,8 +249,8 @@ a.button
     vertical-align: middle;
     text-decoration: none;
     width: 20%;
-    color: #FD3137;
-    border: 3px solid #FD3137;
+    color: #2924ef;
+    border: 3px solid #2924ef;
     text-align: center;
     padding: 15px 40px;
     cursor: pointer;
@@ -266,7 +266,7 @@ a.button:active
 a.button:hover
 {
     color: white;
-    background-color: #FD3137;
+    background-color: #2924ef;
 }
 
 h1

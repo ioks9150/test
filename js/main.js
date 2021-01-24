@@ -259,6 +259,9 @@ jQuery(window).load(function () {
 });
 
 
+
+
+
 jQuery(window).resize(function () {
     jQuery('.image-slider-wrapper').each(function () {
         var slider_width = jQuery(this).width();
