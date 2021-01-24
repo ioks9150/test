@@ -1718,6 +1718,12 @@ div.contact-form {
         }
         .blog-item-holder:hover .view{
         }
+        .filters-button-group .button{
+            font-size:14px;
+        }
+        .filters-button-group .button:after{
+            margin: 0 6px;
+        }
     }
 
     
@@ -1736,11 +1742,6 @@ div.contact-form {
             margin-top: 0;
            padding-bottom: 20px;
         }
-        .filters-button-group .button{
-            font-size:14px;
-        }
-        .filters-button-group .button:after{
-            margin: 0 6px;
-        }
+        
     }
     
