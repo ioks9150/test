@@ -420,6 +420,9 @@ a{text-decoration: none; color:#222;}
     margin-right: 3%;
     background-color: #ccc;
 }
+#sec02 .left .skill li:last-child{
+    margin-right: 0;
+}
 #sec02 .left .skill li.bold{
     background-color: transparent;
     float: none;
@@ -752,10 +755,10 @@ a{text-decoration: none; color:#222;}
         display: none;
     }
     #sec02 .left{
-        height: 45%;
+        height: 55%;
     }
     #sec02 .right{
-        height: 55%;
+        height: 45%;
     }
     #sec02 .left .textbox h3{
         font-size:3.4rem;
