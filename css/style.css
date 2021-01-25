@@ -1,7 +1,80 @@
-*{margin: 0; padding: 0; color:#222; font-size:10px;}
+*{margin: 0; padding: 0; color:#222; font-size:10px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;}
 ul,li{list-style: none;}
 a{text-decoration: none; color:#222;}
 /*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');*/
+
+
+.doc-loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background-color: white;
+}
+
+.doc-loader td {
+    text-align: center;
+    vertical-align: middle;
+}
+.loader {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -13px;
+  margin-left: -13px;
+  border-radius: 60px;
+  animation: loader 0.8s linear infinite;
+  -webkit-animation: loader 0.8s linear infinite;
+}
+
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    border: 4px solid #fff;
+    border-left-color: transparent;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    border: 4px solid #2924ef;
+    border-left-color: transparent;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    border: 4px solid #2924ef;
+    border-left-color: transparent;
+  }
+}
+@-webkit-keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    border: 4px solid #fff;
+    border-left-color: transparent;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    border: 4px solid #2924ef;
+    border-left-color: transparent;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    border: 4px solid #2924ef;
+    border-left-color: transparent;
+  }
+}
+
+
 
 #wrap{
     width: 100%;
@@ -22,15 +95,15 @@ a{text-decoration: none; color:#222;}
 .logo{
     position: absolute;
     left:5%;
-    top:50px;
+    top:60px;
     transform: rotate(45deg);
 }
 .logo>a{
     display: block;
     width: 60px;
     height: 30px;
-    background-color: #0033cc;
     border-radius: 30px;
+    background-color: #2924ef;
     font-size: 2.4rem;
     color:#fff;
     text-align: center;
@@ -42,12 +115,16 @@ a{text-decoration: none; color:#222;}
 .logo:hover{
     transform: rotate(0deg);
     transition: all 0.5s;
+    top:50px;
 }
 .logo>a:hover{
-/*    background-color: black;*/
+        width: 60px;
     height: 60px;
+    transition: all 0.3s;
     text-indent: 0;
-    font-size: 1.6rem;
+    font-size: 14px;
+    color:#2924ef;
+    background-color: #ccff33;
 }
 
 #button{
@@ -114,169 +191,648 @@ a{text-decoration: none; color:#222;}
     background-color: #fff;
     transition: all 0.5s;
 }
+.section{
+    position: relative;
+}
 .container{
     width:80%;
     height: 100vh;
     margin: 0 auto;
-/*    background-color: antiquewhite;*/
-}
-.section{
-    position: relative;
 }
 .pagebox{
     position: absolute;
-    left:-5%;
-    bottom:170px;
-    width: 350px;
+/*    width: 100px;*/
+    left:5%;
+    top:160px;
+/*    background-color: #ccc;*/
+    transform-origin: 50px 20px;
     transform: rotate(-90deg);
 }
-.pagebox .pagetext:before{
-    display: inline-block;
-    content: "";
-    width: 250px;
-    height: 1px;
-    margin-bottom: 7px;
-    margin-right: 10px;
-    background-color: #222;
-}
-.pagebox .pagetext{
-    font-size: 2.4rem;
+.pagetxt{
+    font-size:18px;
     font-weight: 400;
+    color:#222;
 }
-.pagebox .pagetext .number{
-    font-size:3.2rem;
-    font-weight: 700;
+.pagetxt.wh{
+    color:#fff;
 }
 
 #sec01{
-/*    background-color: aqua;*/
-    transition: all 0.5s;
+    position: relative;
 }
-#sec02{
-/*    background-color: pink;*/
-    transition: all 0.5s;
+#sec02 .container{
+    background-color: #fff;
 }
-#sec02 h1{
-    font-size:160px;
-    font-weight: bold;
-    background: -webkit-linear-gradient(red, blue);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
 #sec03{
-    transition: all 0.5s;
+    background-color:#2924ef;
 }
-#sec03 ul{
+
+
+
+
+
+
+
+#sec01 .textbox{
+    padding-top: 300px;
     width: 100%;
-    height: 100vh;
+    height: 210px;
 }
-#sec03 ul:after{
-    display:block;
+#sec01 .textbox p{
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+#sec01 .textbox p.name{
+    font-size: 1.8rem;
+}
+#sec01 .textbox h3{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10.8rem;
+    padding:0 0;
+}
+
+#sec01 .anibox{
+    text-align: center;
+    font-size: 1.8rem;
+    position: relative;
+}
+#sec01 .anibox .cursor{
+    position: absolute;
+    top: 4px;
+    margin: 0 auto;
+    margin-left: 5px;
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    background-color: blue;
+    animation: cursor 0.8s linear infinite;
+  -webkit-animation: cursor 0.8s linear infinite;
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes cursor {
+   0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#sec01 .scrollbox{
+    position: absolute;
+    bottom: 10%;
+    left:1%;
+    right:1%;
+    margin: 0 auto;
+    text-align: center;
+}
+#sec01 .scrollbox span{
+    font-size: 1.6rem;
+}
+#sec01 .scrollbox .mouse{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.6rem;
+    animation: mouse 1s linear infinite;
+  -webkit-animation: mouse 1s linear infinite;
+}
+@keyframes mouse {
+  0% {
+    transform: translateY(0);
+   
+  }
+  50% {
+    transform: translateY(5px);
+    
+  }
+  100% {
+    transform: translateY(10px);
+   
+  }
+}
+@-webkit-keyframes mouse {
+  0% {
+    transform: translateY(0);
+ 
+  }
+  50% {
+    transform: translateY(5px);
+  
+  }
+  100% {
+    transform: translateY(10px);
+ 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#sec02 .container:after{
+    display: block;
     content: "";
     clear: both;
 }
-#sec03 .list{
-    float:left;
-    width: 50%;
-    height: 50%;
-}
-#sec03 .list>a{
-    display: block;
-    width: 100%;
+#sec02 .left{
+    float: left;
+    margin-top: 120px;
+    margin-left: 13%;
+    width: 37%;
     height: 100%;
-    position: relative;
-    text-align: center;
 }
-
-#sec03 .list>a .textbox{
+#sec02 .left .textbox{
     width: 100%;
-    margin-top: 20%;
-    position: absolute;
-    top:0;
-    left:0;
-    z-index: 99;
+    height: 210px;
+    margin-top: 40px;
 }
-#sec03 .list>a .textbox>h3{
-    font-size:3.6rem;
+#sec02 .left .textbox p{
+    font-size: 2.4rem;
+    color:#2924ef;
+    opacity: 0.5;
     font-weight: 700;
-    color:#fff;
-    margin-top: 5%;
-    transition: all 0.5s;
+    padding-top:60px;
+    font-family: 'Roboto', sans-serif;
 }
-#sec03 .list>a .textbox>p{
-    font-size:1.8rem;
-    font-weight: 600;
-    color:#fff;
-    opacity: 0;
-    transition: all 0.5s;
+#sec02 .left .textbox h3{
+    margin-top: -20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10.8rem;
+    color:#2924ef;
+    padding:0 0;
 }
-#sec03 .list>a .textbox>span{
-    font-size:1.5rem;
+
+#sec02 .left .profile{
+    width: 100%;
+    height: 210px;
+        margin-top: 40px;
+}
+#sec02 .left .profile li{
+    font-size: 1.6rem;
     font-weight: 400;
+/*    letter-spacing: -0.2px;*/
+    margin-bottom: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#sec02 .left .profile li.bold{
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#sec02 .left .skill{
+    width: 100%;
+    height: 210px;
+        margin-top: 22px;
+}
+#sec02 .left .skill:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+#sec02 .left .skill li{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 3%;
+    background-color: #ccc;
+}
+#sec02 .left .skill li.bold{
+   color:#2924ef;
+    float: none;
+    width: 100%;
+    height: 30px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif; 
+}
+
+
+#sec02 .right{
+    float: left;
+    margin-top: 120px;
+    width: 50%;
+    height: 100%;
+}
+#sec02 .right .line{
+    width: 60%;
+    height: 170px;
+    border-bottom: 1px solid #dfdfdf;
+}
+#sec02 .right .line:last-child{
+    border-bottom: none;
+}
+#sec02 .right .line ul{
+    margin-top: 60px;
+}
+#sec02 .right .line ul li{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+/*    letter-spacing: -0.2px;*/
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#sec02 .right .line ul li.bold{
+    color:#2924ef;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+#sec02 .right .line ul li span{
+    font-size:1.5rem;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+#sec03 .textbox{
+    padding-top: 220px;
+    margin-left: 13%;
+    width: 100%;
+    height: 210px;
+}
+#sec03 .textbox p{
+    font-size: 2.4rem;
     color:#fff;
-    transition: all 0.5s;
-    opacity: 0;
-    display: none;
+    opacity: 0.5;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
 }
-#sec03 .list>a .textbox>.line{
-    width: 5%;
-    height: 1px;
-    background-color: #fff;
-    margin: 0 auto;
-    margin-top: 20%;
-    margin-bottom: 1%;
-    opacity: 0;
+#sec03 .textbox h3{
+    margin-top: -20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10.8rem;
+    color:#fff;
+    padding:0 0;
 }
-#sec03 .list>a .imgbox{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+    
+    
+    #sec01 .textbox h3 {
+        font-size: 7.2rem;
+    }
+    
+    
+    
+    #sec02 .left{
+    margin-left: 4%;
+    width: 46%;
+        margin-top: 100px;
+} 
+   #sec02 .right{
+    width: 50%;
+        margin-top: 100px;
+}
+    #sec02 .right .line{
     width: 100%;
-    height: 100%;
-    position: absolute;
-    top:0;
-    left:0;
-    z-index: 9;
-    background-color: #3333cc;
+}
+    .pagebox{
+        display: none;
+    }
+    
+}
+
+
+@media screen and (max-width: 1000px) {
+ #sec02 .left .textbox h3{
+    margin-top: -10px;
+    font-size: 7.2rem;
+}
+    #sec02 .left{
+    margin-left: 4%;
+    width: 50%;
+} 
+    #sec02 .left .skill li{
+    width: 40px;
+    height: 40px;
+}
+    #sec02 .right{
+    width: 46%;
+}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    
+    .pagebox {
+    left: 2%;
+    top: 90px;
+    }
+    .pagetxt{
+        font-size: 1.4rem;
+    }
+    
+    #header{
+    height: 80px;
+}
+.logo{
+    top:50px;
+}
+.logo>a{
+    width: 35px;
+    height: 15px;
+    background-color: #2924ef;
+    font-size: 1.4rem;
+    line-height: 15px;
+    }
+.logo:hover{
+    top:40px;
+    transform: rotate(0deg);
     transition: all 0.5s;
-    overflow: hidden;
 }
-#sec03 .list>a .imgbox>.img{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top:0;
-    left:0;
-    opacity: 0.2;
-    z-index: 9;
-    background: url(../images/test.jpg);
-    background-position: center auto;
-    background-size: cover;
-    background-repeat: no-repeat;
+.logo>a:hover{
+        width: 50px;
+    height: 50px;
+    font-size: 14px;
+    line-height: 45px;
 }
 
-#sec03 .list>a:hover .textbox>h3{
-    margin-top: 0%;
+    .container{
+        width: 70%;
+    }
+    
+    #sec01 .textbox h3{
+        font-size:4.8rem;
+    }
+    
+    
+    #sec02 .left{
+        width: 100%;
+        float: none;
+        height: 50%;
+        margin-top: 0;
+        margin-left: 0%;
+    }
+    
+    #sec02 .right{
+        width: 100%;
+        float: none;
+        height: 50%;
+        margin-top: 0;
+    }
+    #sec02 .left .textbox{
+        height: 160px;
+        margin-top: 20px;
+    }
+    #sec02 .left .textbox p{
+        font-size: 1.8rem;
+        padding-top: 90px;
+    }
+    #sec02 .left .textbox h3{
+        font-size: 5.6rem;
+    }
+    #sec02 .left .profile{
+        height: 130px;
+        margin-top: 20px;
+    }
+    #sec02 .left .profile li.bold{
+        margin-bottom: 5px;
+        font-size: 1.8rem;
+    }
+    #sec02 .left .profile li{
+        margin-bottom: 0;
+    }
+    #sec02 .left .skill{
+        height: 110px;
+        border-bottom: 1px solid #dfdfdf;
+    }
+    #sec02 .right .line{
+        height: 110px;
+    }
+    #sec02 .right .line ul{
+        margin-top: 20px;
+    }
+    #sec02 .right .line ul li.bold{
+        margin-bottom: 5px;
+    }
+    #sec02 .right .line ul li{
+        margin-bottom: 0px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+#button{
+    width: 50px;
+    height: 50px;
+    top:40px;
 }
-#sec03 .list>a:hover .textbox>p{
-    opacity: 1;
+#button>span{
+    width: 20px;
+    height: 3px;
 }
-#sec03 .list>a:hover .textbox>span{
-    opacity: 1;
-    display: block;
+#button>span.line2{
+    margin-top: 5px;
 }
-#sec03 .list>a:hover .textbox>.line{
-    display: block;
+
+    
 }
-#sec03 .list>a:hover .imgbox{
-    background-color: #111111;
+
+
+@media screen and (max-width: 432px) {
+    #sec01 .anibox{
+        display: none;
+    }
+    #sec02 .left{
+        height: 45%;
+    }
+    #sec02 .right{
+        height: 55%;
+    }
+    #sec02 .left .textbox h3{
+        font-size:3.4rem;
+        margin-top: -5px;
+    }
+    #sec02 .left .textbox p{
+        padding-top:90px;
+    }
+    #sec02 .left .textbox{
+        height: 140px;
+    }
+    #sec02 .left .skill li{
+        width: 30px;
+        height: 30px;
+    }
+    #sec02 .left .skill{
+        height: 90px;
+    }
+    
+    
 }
-#sec03 .list>a:hover .imgbox>.img{
+
+
+@media screen and (max-width: 368px) {
+    
+    #header{
+    height: 60px;
+}
+.logo{
+    top:30px;
+}
+.logo>a{
+    width: 35px;
+    height: 15px;
+    background-color: #2924ef;
+    font-size: 1.4rem;
+    line-height: 15px;
+    }
+.logo:hover{
+    top:20px;
+    transform: rotate(0deg);
     transition: all 0.5s;
-    transform: scale(1.1)
+}
+.logo>a:hover{
+        width: 40px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
 }
 
-
-
-
+    
+    
+    
+#button{
+    width: 40px;
+    height: 40px;
+    top:20px;
+}
+#button>span{
+    width: 20px;
+    height: 3px;
+}
+#button>span.line2{
+    margin-top: 5px;
+}
+    
+    .container{
+        width: 65%;
+    }
+    
+    
+    #sec01 .textbox h3{
+        font-size: 3.6rem;
+    }
+    #sec01 .textbox p{
+        font-size: 1.6rem;
+    }
+    #sec01 .scrollbox span{
+        font-size: 1.4rem;
+    }
+    #sec02 .left .skill{
+        border-bottom: none;
+    }
+    #sec02 .right .line{
+        border-bottom: none;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
 
 

@@ -1,6 +1,13 @@
 $(document).ready(function () {
 
 
+      jQuery(".blog-item-holder, .post-border").css({opacity: 1});
+
+    jQuery('.doc-loader').fadeOut('fast');
+
+    
+    
+    
 $('#fullpage').fullpage({
     'verticalCentered' : false,
 //풀페이지 js css파일은 기본적으로 페이지의 가로축이
@@ -18,34 +25,115 @@ $('#fullpage').fullpage({
         }else{
             $('.box').removeClass('on');
         }
-
+$('#sec03.active').parent().siblings('#header').find('.logo>a').css({
+     backgroundColor : '#ccff33'
+ });
+        
+        $('#sec03.active').parents('#wrap').siblings('#fp-nav').find('ul li a span').css({
+     background : '#fff'
+ });        
+        
+$('#sec03.active').parents('#wrap').siblings('#fp-nav').find('ul li a.active span').css({
+     background : '#ccff33'
+ });   
+        
+  $('#sec02.active').parents('#wrap').siblings('#fp-nav').find('ul li a span').css({
+     background : '#222'
+ });        
+        
+$('#sec02.active').parents('#wrap').siblings('#fp-nav').find('ul li a.active span').css({
+     background : '#2924ef'
+ });        
+  $('#sec01.active').parents('#wrap').siblings('#fp-nav').find('ul li a span').css({
+     background : '#222'
+ });        
+        
+$('#sec01.active').parents('#wrap').siblings('#fp-nav').find('ul li a.active span').css({
+     background : '#2924ef'
+ });        
+           
+        
+        
+        
+        
+       
+        
+      
+        
     },
     //func.afterLoad
 //페이지가 로딩이 되고 난 후 일어날 일
 
 'onLeave' : function(i,f,d){
     
-    if(i===3 && d==='down'){
-        $('.item').addClass('on').removeClass('active');
-    }
-    if(i===5 && d==='up'){
-        $('.item').addClass('active').removeClass('on');
-    }
+//    if(i===3 && d==='down'){
+//        $('.item').addClass('on').removeClass('active');
+//    }
+//    if(i===5 && d==='up'){
+//        $('.item').addClass('active').removeClass('on');
+//    }
+    
+  $('#sec03.active').parent().siblings('#header').find('.logo>a').css({
+     backgroundColor : '#2924ef'
+ }) 
+$('#sec03.active').parents('#wrap').siblings('#fp-nav').find('ul li a span').css({
+     background : '#222'
+ });      
+    
+ $('#sec03.active').parents('#wrap').siblings('#fp-nav').find('ul li a.active span').css({
+     background : '#222'
+ }); 
+    $('#sec02.active').parents('#wrap').siblings('#fp-nav').find('ul li a span').css({
+     background : '#222'
+ });        
+        
+$('#sec02.active').parents('#wrap').siblings('#fp-nav').find('ul li a.active span').css({
+     background : '#2924ef'
+ });        
+  $('#sec01.active').parents('#wrap').siblings('#fp-nav').find('ul li a span').css({
+     background : '#222'
+ });        
+        
+$('#sec01.active').parents('#wrap').siblings('#fp-nav').find('ul li a.active span').css({
+     background : '#2924ef'
+ });  
+    
+    
  //다른페이지에서부터 본페이지로 이동을 할 때 일어날 일
 }//func.onLeave
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 });
 
+// $('#sec03.active').parent().siblings('#header').find('.logo>a').css({
+//     backgroundColor : 'red'
+// })   
+//    
     
+//    
+//    $('#sec01.active').parent().siblings('#header').find('.logo_blue').css({
+//     display : 'none'
+// }) 
+//    $('#sec02.active').parent().siblings('#header').find('.logo_lime').css({
+//     display : 'block'
+// }) 
+//    $('#sec03.active').parent().siblings('#header').find('.logo_blue').css({
+//     display : 'block'
+// }) 
+//    
     
- $('#fullpage #sec03.active').parents().siblings('#header').find('.logo>a').css({
-     backgroundColor : 'red'
- })   
-    
-    
-    $('#target1').waypoint(function() {
-    $('#target1').addClass('animated fadeInDown');
-}, { offset: '100%' });
+//    $('#target1').waypoint(function() {
+//    $('#target1').addClass('animated fadeInDown');
+//}, { offset: '100%' });
 
     
     

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="ko">
 
 <head>
@@ -9,20 +9,28 @@
 
     <link rel="stylesheet" href="css/fullpage.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/fullpage.js"></script>
     <script src="js/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" charset="utf-8"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.min.js" charset="utf-8"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" type="text/css">
+
 </head>
 
 <body>
+    <table class="doc-loader">
+        <tbody>
+            <tr>
+                <td class="loader">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!--   화면로딩   -->
     <div id="wrap">
         <header id="header">
-            <h1 class="logo"><a href="#">HOME</a></h1>
+            <h1 class="logo"><a href="index.html">HOME</a></h1>
             <button id="button">
                 <span class="line1"></span>
                 <span class="line2"></span>
@@ -46,81 +54,100 @@
                 </div>
             </nav>
         </header>
+
         <div id="fullpage">
             <div class="section" id="sec01">
-                <div class="container"></div>
-                <div class="f_nav"></div>
-            </div>
-            <div class="section" id="sec02">
-                <div class="container"></div>
-            </div>
-            <div class="section" id="sec02">
+                <aside class="pagebox">
+                    <div class="pagetxt">HOME</div>
+                </aside>
                 <div class="container">
-                    <h1>테스트</h1>
+                    <div class="textbox">
+                        <p class="name">KIM EUN JEONG</p>
+                        <h3>PORTFOLIO</h3>
+                        <p>2020 - 2021</p>
+                    </div>
+                    <div class="anibox">
+                        안녕하세요. 어쩌구저쩌구 어쩌구입니다.<span class="cursor"></span>
+                    </div>
+                    <div class="scrollbox">
+                        <span>SCROLL</span>
+                        <div class="mouse">
+                            <img src="images/mouse.png" alt="마우스">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="section" id="sec03">
+            <div class="section" id="sec02">
+                <aside class="pagebox">
+                    <div class="pagetxt">ABOUT</div>
+                </aside>
                 <div class="container">
-                    <ul id="target1">
-                        <li class="list" ><a href="web_project1.html">
-                                <div class="textbox">
-                                    <h3>WEB DESGIN</h3>
-                                    <p>웹 디자인</p>
-                                    <span class="line">
-                                        <span></span>
-                                    </span>
-                                    <span>MORE VIEW</span>
-                                </div>
-                                <div class="imgbox">
-                                    <div class="img"></div>
-                                </div>
-                            </a></li>
-                        <li class="list"><a href="visual.html">
-                                <div class="textbox">
-                                    <h3>VISUAL DESGIN</h3>
-                                    <p>비주얼 디자인</p>
-                                    <span class="line">
-                                        <span></span>
-                                    </span>
-                                    <span>MORE VIEW</span>
-                                </div>
-                                <div class="imgbox">
-                                    <div class="img"></div>
-                                </div>
-                            </a></li>
-                        <li class="list"><a href="bici.html">
-                                <div class="textbox">
-                                    <h3>BI/CI DESGIN</h3>
-                                    <p>로고 디자인</p>
-                                    <span class="line">
-                                        <span></span>
-                                    </span>
-                                    <span>MORE VIEW</span>
-                                </div>
-                                <div class="imgbox">
-                                    <div class="img"></div>
-                                </div>
-                            </a></li>
-                        <li class="list"><a href="editorial.html">
-                                <div class="textbox">
-                                    <h3>EDITORIAL DESGIN</h3>
-                                    <p>편집 디자인</p>
-                                    <span class="line">
-                                        <span></span>
-                                    </span>
-                                    <span>MORE VIEW</span>
-                                </div>
-                                <div class="imgbox">
-                                    <div class="img"></div>
-                                </div>
-                            </a></li>
-                            
-                            
-                            
+                    <div class="left">
+                        <div class="textbox">
+                            <p>PAGE 01</p>
+                            <h3>ABOUT</h3>
+                        </div>
+                        <ul class="profile">
+                            <li class="bold">PROFILE</li>
+                            <li>N. 김은정</li>
+                            <li>B. 1991 / 10 / 21</li>
+                            <li>P. 010 - 8536 - 8242</li>
+                            <li>M. ioks9150@naver.com</li>
+                        </ul>
+                        <ul class="skill">
+                            <li class="bold">SKILL</li>
+                            <li>d</li>
+                            <li>d</li>
+                            <li>d</li>
+                            <li>d</li>
+                            <li>d</li>
+                            <li>d</li>
+                        </ul>
+                    </div>
+                    <ul class="right">
+                        <li class="line">
+                            <ul>
+                                <li class="bold">LIFE</li>
+                                <li><span>2010</span>부산강서고등학교졸업</li>
+                                <li><span>2012</span>경남정보대학 졸업</li>
+                                <li><span>2020</span>부산IT교육센터 웹디자인 수료</li>
+                            </ul>
+                        </li>
+                        <li class="line">
+                            <ul>
+                                <li class="bold">CERTIFICATION</li>
+                                <li><span>2013</span>컴퓨터그래픽스운용기능사</li>
+                                <li><span>2013</span>GTQ 1급</li>
+                                <li><span>2020</span>웹 디자인기능사</li>
+                            </ul>
+                        </li>
+                        <li class="line">
+                            <ul>
+                                <li class="bold">WHAT CAN I DO</li>
+                                <li><span>Web.</span>웹표준 및 웹접근성 구현</li>
+                                <li><span>Branding.</span>CI 및 BI 컨셉가이드, 리플렛홍보물</li>
+                                <li><span>Visual.</span>소셜온라인 SNS카드뉴스</li>
+                                <li><span>Shoppingmall.</span>카페 24쇼핑몰, 네이버블로그</li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
-            
+            <div class="section" id="sec03">
+                <aside class="pagebox">
+                    <div class="pagetxt wh">PORTFOLIO</div>
+                </aside>
+                <div class="container">
+                    <div class="textbox">
+                        <p>PAGE 02</p>
+                        <h3>PORTFOLIO</h3>
+                    </div>
+                    <ul class="list">
+                        <li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </body>
