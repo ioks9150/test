@@ -560,12 +560,24 @@ a{text-decoration: none; color:#222;}
     width: 50%;
         margin-top: 100px;
 }
+    
     #sec02 .right .line{
     width: 100%;
 }
     .pagebox{
         display: none;
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 }
 
@@ -586,7 +598,9 @@ a{text-decoration: none; color:#222;}
     #sec02 .right{
     width: 46%;
 }
-    
+    #sec02 .left .skill li{
+        margin-bottom: 5px;
+    }
 }
 
 
@@ -647,7 +661,7 @@ a{text-decoration: none; color:#222;}
     #sec02 .left{
         width: 100%;
         float: none;
-        height: 50%;
+        height: 60%;
         margin-top: 0;
         margin-left: 0%;
     }
@@ -655,23 +669,23 @@ a{text-decoration: none; color:#222;}
     #sec02 .right{
         width: 100%;
         float: none;
-        height: 50%;
+        height: 40%;
         margin-top: 0;
     }
     #sec02 .left .textbox{
         height: 160px;
-        margin-top: 20px;
+        margin-top: 150px;
     }
     #sec02 .left .textbox p{
         font-size: 1.8rem;
-        padding-top: 90px;
+        padding-top: 120px;
     }
     #sec02 .left .textbox h3{
         font-size: 5.6rem;
     }
     #sec02 .left .profile{
         height: 130px;
-        margin-top: 20px;
+        margin-top: 90px;
     }
     #sec02 .left .profile li.bold{
         margin-bottom: 5px;
@@ -682,13 +696,16 @@ a{text-decoration: none; color:#222;}
     }
     #sec02 .left .skill{
         height: 110px;
-        border-bottom: 1px solid #dfdfdf;
     }
     #sec02 .right .line{
-        height: 110px;
+        height: 90px;
+        border-bottom: none;
     }
     #sec02 .right .line ul{
         margin-top: 20px;
+    }
+    #sec02 .right .line:nth-child(3){
+        display: none;
     }
     #sec02 .right .line ul li.bold{
         margin-bottom: 5px;
@@ -697,7 +714,7 @@ a{text-decoration: none; color:#222;}
         margin-bottom: 0px;
     }
     
-    
+    }
     
     
     
@@ -742,17 +759,21 @@ a{text-decoration: none; color:#222;}
     #sec02 .left .textbox p{
         padding-top:90px;
     }
+    #sec02 .left .profile{
+        margin-top: 80px;
+    }
+    
     #sec02 .left .textbox{
         height: 140px;
     }
     #sec02 .left .skill li{
         width: 30px;
         height: 30px;
+        margin-bottom: 5px;
     }
     #sec02 .left .skill{
         height: 90px;
     }
-    
     
 }
 
@@ -814,11 +835,8 @@ a{text-decoration: none; color:#222;}
     #sec01 .scrollbox span{
         font-size: 1.4rem;
     }
-    #sec02 .left .skill{
-        border-bottom: none;
-    }
-    #sec02 .right .line{
-        border-bottom: none;
+    #sec02 .left .profile{
+        margin-top: 70px;
     }
     
     
