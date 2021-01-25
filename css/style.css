@@ -196,6 +196,7 @@ a{text-decoration: none; color:#222;}
 }
 .container{
     width:80%;
+    height: 100%;
     margin: 0 auto;
 }
 .pagebox{
@@ -361,22 +362,20 @@ a{text-decoration: none; color:#222;}
 }
 #sec02 .left{
     float: left;
-    margin-top: 120px;
     margin-left: 13%;
     width: 37%;
+    padding: 15% 0 15% 0;
     height: 100%;
 }
 #sec02 .left .textbox{
     width: 100%;
-    height: 210px;
-    margin-top: 40px;
+    padding: 7% 0;
 }
 #sec02 .left .textbox p{
     font-size: 2.4rem;
     color:#2924ef;
     opacity: 0.5;
     font-weight: 700;
-    padding-top:60px;
     font-family: 'Roboto', sans-serif;
 }
 #sec02 .left .textbox h3{
@@ -389,8 +388,7 @@ a{text-decoration: none; color:#222;}
 
 #sec02 .left .profile{
     width: 100%;
-    height: 210px;
-        margin-top: 40px;
+    padding: 7% 0;
 }
 #sec02 .left .profile li{
     font-size: 1.6rem;
@@ -408,8 +406,7 @@ a{text-decoration: none; color:#222;}
 
 #sec02 .left .skill{
     width: 100%;
-    height: 210px;
-        margin-top: 22px;
+    padding: 7% 0;
 }
 #sec02 .left .skill:after{
     display: block;
@@ -424,34 +421,33 @@ a{text-decoration: none; color:#222;}
     background-color: #ccc;
 }
 #sec02 .left .skill li.bold{
-   color:#2924ef;
+    background-color: transparent;
     float: none;
     width: 100%;
     height: 30px;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     font-weight: 700;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-family: 'Roboto', sans-serif; 
 }
 
 
 #sec02 .right{
     float: left;
-    margin-top: 120px;
+    padding: 15% 0 15% 0;
     width: 50%;
     height: 100%;
+    background-color: aqua
 }
 #sec02 .right .line{
     width: 60%;
-    height: 170px;
+    padding: 7% 0;
     border-bottom: 1px solid #dfdfdf;
 }
 #sec02 .right .line:last-child{
     border-bottom: none;
 }
-#sec02 .right .line ul{
-    margin-top: 60px;
-}
+
 #sec02 .right .line ul li{
     font-size: 1.5rem;
     font-weight: 400;
@@ -544,33 +540,34 @@ a{text-decoration: none; color:#222;}
 @media screen and (max-width: 1280px) {
     
     
-    #sec01 .textbox h3 {
-        font-size: 7.2rem;
+    .pagebox{
+        display: none;
     }
+    
     #sec01 .anibox{
         display: none;
     }
+    #sec01 .textbox h3 {
+        font-size: 7.2rem;
+    }
+    
+    
     
     
     #sec02 .left{
     margin-left: 4%;
+        padding-top:15%;
     width: 46%;
-        margin-top: 100px;
 } 
    #sec02 .right{
+        padding-top:15%;
     width: 50%;
-        margin-top: 100px;
 }
     
     #sec02 .right .line{
     width: 100%;
 }
-    .pagebox{
-        display: none;
-    }
-    
-    
-    
+
     
     
     
@@ -591,6 +588,7 @@ a{text-decoration: none; color:#222;}
     #sec02 .left{
     margin-left: 4%;
     width: 50%;
+        padding-top:20%;
 } 
     #sec02 .left .skill li{
     width: 40px;
@@ -598,6 +596,7 @@ a{text-decoration: none; color:#222;}
 }
     #sec02 .right{
     width: 46%;
+        padding-top:20%;
 }
     #sec02 .left .skill li{
         margin-bottom: 5px;
@@ -662,31 +661,29 @@ a{text-decoration: none; color:#222;}
     #sec02 .left{
         width: 100%;
         float: none;
-        height: 60%;
-        margin-top: 0;
-        margin-left: 0%;
+        height: 50%;
+        padding:0;
+        margin-left: 0;
     }
     
     #sec02 .right{
         width: 100%;
         float: none;
-        height: 40%;
-        margin-top: 0;
+        height: 50%;
+        padding:0;
     }
     #sec02 .left .textbox{
-        height: 160px;
-        margin-top: 150px;
+        padding: 2% 0;
+        padding-top: 30%;
     }
     #sec02 .left .textbox p{
         font-size: 1.8rem;
-        padding-top: 120px;
     }
     #sec02 .left .textbox h3{
         font-size: 5.6rem;
     }
     #sec02 .left .profile{
-        height: 130px;
-        margin-top: 90px;
+        padding: 2% 0;
     }
     #sec02 .left .profile li.bold{
         margin-bottom: 5px;
@@ -696,17 +693,20 @@ a{text-decoration: none; color:#222;}
         margin-bottom: 0;
     }
     #sec02 .left .skill{
-        height: 110px;
+        padding: 2% 0;
+    }
+    #sec02 .left .skill li.bold{
+        margin-bottom: 5px;
+        font-size: 1.8rem;
     }
     #sec02 .right .line{
-        height: 90px;
         border-bottom: none;
+        padding: 2% 0;
     }
     #sec02 .right .line ul{
-        margin-top: 20px;
     }
     #sec02 .right .line:nth-child(3){
-        display: none;
+/*        display: none;*/
     }
     #sec02 .right .line ul li.bold{
         margin-bottom: 5px;
@@ -757,23 +757,11 @@ a{text-decoration: none; color:#222;}
         font-size:3.4rem;
         margin-top: -5px;
     }
-    #sec02 .left .textbox p{
-        padding-top:90px;
-    }
-    #sec02 .left .profile{
-        margin-top: 80px;
-    }
     
-    #sec02 .left .textbox{
-        height: 140px;
-    }
     #sec02 .left .skill li{
         width: 30px;
         height: 30px;
         margin-bottom: 5px;
-    }
-    #sec02 .left .skill{
-        height: 90px;
     }
     
 }
@@ -835,9 +823,6 @@ a{text-decoration: none; color:#222;}
     }
     #sec01 .scrollbox span{
         font-size: 1.4rem;
-    }
-    #sec02 .left .profile{
-        margin-top: 70px;
     }
     
     
