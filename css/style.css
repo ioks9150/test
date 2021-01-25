@@ -656,7 +656,9 @@ a{text-decoration: none; color:#222;}
     #sec01 .textbox h3{
         font-size:4.8rem;
     }
-    
+    #sec01 .anibox{
+        display: none;
+    }
     
     #sec02 .left{
         width: 100%;
