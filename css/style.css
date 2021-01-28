@@ -582,14 +582,36 @@ a {
     left: 0;
     z-index: 3;
     transition: all 0.5s;
-    background: url(../images/test.jpg);
+    
+}
+.container .list:nth-child(1) .listbg {
+    background: url(../images/sec03_01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
+}
+.container .list:nth-child(2) .listbg {
+    background: url(../images/sec03_02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container .list:nth-child(3) .listbg {
+    background: url(../images/sec03_03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container .list:nth-child(4) .listbg {
+    background: url(../images/sec03_04.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .container .list:hover .color {
-    background-color: transparent;
+    background-color: #2924ef;
+/*    background-color: #111;*/
     opacity: 0.5;
 }
 
