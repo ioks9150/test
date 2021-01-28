@@ -350,8 +350,8 @@ a {
 .scroll {
     position: absolute;
     bottom: 10%;
-    left: 45%;
-    right: 45%;
+    left: 15%;
+    right: 15%;
     margin: 0 auto;
     width: 60px;
     height: 60px;
@@ -639,7 +639,7 @@ a {
 
     .header_left {
         top: 180px;
-        left: 2%;
+        left: 1.5%;
     }
     
     
@@ -678,7 +678,7 @@ a {
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
     #headerin nav {
         display: none;
     }
@@ -702,10 +702,17 @@ a {
     .container .box{
         top:30%;
         bottom:30%;
+        padding: 8%;
     }
     .container .box .line{
         margin-top: 8%;
         margin-bottom: 8%;
+    }
+    .container .box h4{
+        margin-top: 0;
+    }
+    .container .box .span{
+        padding-bottom: 0;
     }
 }
 
@@ -758,6 +765,11 @@ a {
     .aboutbtn {
         height: 45px;
     }
+    .container .box{
+        padding: 10% 0;
+        border:0;
+        width: 90%;
+    }
 
     .menu_bg ul li a {
         font-size: 4.6rem;
@@ -790,5 +802,22 @@ a {
     .aboutbtn {
         width: 160px;
         font-size: 1.6rem;
+    }
+    .container .box h4{
+        margin-top: 10px;
+    }
+    .container .box .line{
+        margin-top: 12%;
+        margin-bottom: 12%;
+    }
+    
+}
+@media screen and (max-width: 368px){
+    .container .box{
+        
+    }
+    .container .box .line{
+        margin-top: 30%;
+        margin-bottom: 30%;
     }
 }
