@@ -25,33 +25,10 @@ $('#fullpage').fullpage({
         }else{
             $('.box').removeClass('on');
         }
-$('#sec03.active').parent().siblings('#header').find('.logo>a').css({
-     backgroundColor : '#ccff33'
- });
-        
-        $('#sec03.active').parents('#wrap').siblings('#fp-nav').find('ul li a span').css({
-     background : '#fff'
- });        
-        
-$('#sec03.active').parents('#wrap').siblings('#fp-nav').find('ul li a.active span').css({
-     background : '#ccff33'
- });   
-        
-  $('#sec02.active').parents('#wrap').siblings('#fp-nav').find('ul li a span').css({
-     background : '#222'
- });        
-        
-$('#sec02.active').parents('#wrap').siblings('#fp-nav').find('ul li a.active span').css({
-     background : '#2924ef'
- });        
-  $('#sec01.active').parents('#wrap').siblings('#fp-nav').find('ul li a span').css({
-     background : '#222'
- });        
-        
-$('#sec01.active').parents('#wrap').siblings('#fp-nav').find('ul li a.active span').css({
-     background : '#2924ef'
- });        
-           
+//$('#sec03.active').parent().siblings('#header').find('.logo>a').css({
+//     backgroundColor : '#ccff33'
+// });
+
         
         
         
@@ -73,69 +50,48 @@ $('#sec01.active').parents('#wrap').siblings('#fp-nav').find('ul li a.active spa
 //        $('.item').addClass('active').removeClass('on');
 //    }
     
-  $('#sec03.active').parent().siblings('#header').find('.logo>a').css({
-     backgroundColor : '#2924ef'
- }) 
-$('#sec03.active').parents('#wrap').siblings('#fp-nav').find('ul li a span').css({
-     background : '#222'
- });      
-    
- $('#sec03.active').parents('#wrap').siblings('#fp-nav').find('ul li a.active span').css({
-     background : '#222'
- }); 
-    $('#sec02.active').parents('#wrap').siblings('#fp-nav').find('ul li a span').css({
-     background : '#222'
- });        
-        
-$('#sec02.active').parents('#wrap').siblings('#fp-nav').find('ul li a.active span').css({
-     background : '#2924ef'
- });        
-  $('#sec01.active').parents('#wrap').siblings('#fp-nav').find('ul li a span').css({
-     background : '#222'
- });        
-        
-$('#sec01.active').parents('#wrap').siblings('#fp-nav').find('ul li a.active span').css({
-     background : '#2924ef'
- });  
-    
+//  $('#sec03.active').parent().siblings('#header').find('.logo>a').css({
+//     backgroundColor : '#2924ef'
+// }) 
+
     
  //다른페이지에서부터 본페이지로 이동을 할 때 일어날 일
 }//func.onLeave
 
     
     
-    
-    
-    
-    
-    
-    
-    
-    
 });
 
-// $('#sec03.active').parent().siblings('#header').find('.logo>a').css({
-//     backgroundColor : 'red'
-// })   
+    
+//     $('.menu').on('click',function(){
+//            $(this).addClass('active');
+//            $(this).parent().siblings('.menu_bg').addClass('active')
+//        })
+//    
+//    $('.menu.active').on('click',function(){
+//         $(this).removeClass('active');
+//            $(this).parent().siblings('.menu_bg').removeClass('active')
+//     })
+//    
+//    
+//    $('.menu').on('click',function(){
+//            $(this).toggleClass('active')
+//        })
+//    
 //    
     
-//    
-//    $('#sec01.active').parent().siblings('#header').find('.logo_blue').css({
-//     display : 'none'
-// }) 
-//    $('#sec02.active').parent().siblings('#header').find('.logo_lime').css({
-//     display : 'block'
-// }) 
-//    $('#sec03.active').parent().siblings('#header').find('.logo_blue').css({
-//     display : 'block'
-// }) 
-//    
+    $('#m_menu').on('click',function(){
+//            $(this).addClass('active');
+            $(this).toggleClass('active')
+            $('.menu_bg').toggleClass('active');
+        });
     
-//    $('#target1').waypoint(function() {
-//    $('#target1').addClass('animated fadeInDown');
-//}, { offset: '100%' });
+    
 
     
+    
+    
+
     
     
     

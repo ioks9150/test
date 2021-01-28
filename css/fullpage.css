@@ -132,8 +132,8 @@
  #fp-nav ul li,
  .fp-slidesNav ul li {
      display: block;
-     width: 20px;
-     height: 5px;
+     width: 10px;
+     height: 10px;
      margin: 15px 0;
      position:relative;
  }
@@ -156,8 +156,8 @@
  .fp-slidesNav ul li a.active span,
  #fp-nav ul li:hover a.active span,
  .fp-slidesNav ul li:hover a.active span{
+     width: 25px;
      height: 5px;
-     width: 40px;
      background: #2924ef;
 /*     margin: -6px 0 0 -6px;*/
 /*     border-radius: 100%;*/
@@ -169,11 +169,11 @@
 /*     border-radius: 50%;*/
      position: absolute;
      z-index: 1;
+     width: 5px;
      height: 5px;
-     width: 20px;
      border: 0;
-     background: #222;
-/*     left: 50%;*/
+     background: #fff;
+     left: 50%;
      top: 50%;
 /*     margin: -2px 0 0 -2px;*/
      -webkit-transition: all 0.1s ease-in-out;
