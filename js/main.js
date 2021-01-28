@@ -1,6 +1,9 @@
 jQuery(document).ready(function () {
     
-    
+    jQuery('#m_menu').on('click',function(){
+            jQuery(this).toggleClass('active');
+            jQuery('.menu_bg').toggleClass('active');
+        });
 
 
     var ua = navigator.userAgent.toLowerCase();
@@ -384,7 +387,8 @@ var SendMail = function () {
         alert('Your email is not in valid format');
     }
     
-    
+        
+     
     
     
 };

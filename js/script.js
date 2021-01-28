@@ -82,7 +82,7 @@ $('#fullpage').fullpage({
     
     $('#m_menu').on('click',function(){
 //            $(this).addClass('active');
-            $(this).toggleClass('active')
+            $(this).toggleClass('active');
             $('.menu_bg').toggleClass('active');
         });
     
