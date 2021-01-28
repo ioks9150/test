@@ -1441,44 +1441,49 @@ div.pp_default .pp_loaderIcon {
         width: 50px;
         height: 25px;
     }
-}
 
+    #m_menu {
+        top: 20px;
+        width: 50px;
+        height: 50px;
+    }
 
-#m_menu {
-    top: 20px;
-    width: 50px;
-    height: 50px;
-
-}
-
-#m_menu span {
-    width: 25px;
-    margin-bottom: 6px;
-}
+    #m_menu span {
+        width: 25px;
+        margin-bottom: 6px;
+    }
 
 
 
 
 
-.blog-item-holder .text-box {
-    margin-top: 50%;
-}
 
-.tit-box {
-    padding-top: 110px;
-}
 
-.footer .content-1530 {
-    max-width: 90%;
-}
 
-.footer ul li {
-    font-size: 14px;
-}
+    .blog-item-holder .text-box {
+        margin-top: 50%;
+    }
 
-.right-footer-content img {
-    max-width: 80%;
-}
+    .tit-box {
+        padding-top: 110px;
+    }
+
+    .footer .content-1530 {
+        max-width: 90%;
+    }
+
+    .footer ul li {
+        font-size: 14px;
+    }
+
+    .right-footer-content img {
+        max-width: 80%;
+    }
+
+
+
+
+
 }
 
 @media screen and (max-width: 1220px) {
@@ -1719,7 +1724,7 @@ div.pp_default .pp_loaderIcon {
 }
 
 @media screen and (max-width: 805px) {
-    .content-1330{
+    .content-1330 {
         width: 490px;
     }
 
@@ -1834,9 +1839,10 @@ div.pp_default .pp_loaderIcon {
 
 @media screen and (max-width: 768px) {
 
-    .content-header{
+    .content-header {
         background-color: transparent;
     }
+
     .header-logo {
         top: 29px;
     }
@@ -1845,30 +1851,30 @@ div.pp_default .pp_loaderIcon {
         width: 40px;
         height: 20px;
     }
-    }
 
 
-    #m_menu {
-        top: 20px;
-        width: 40px;
-        height: 40px;
 
-    }
+#m_menu {
+    top: 20px;
+    width: 40px;
+    height: 40px;
 
-    #m_menu span {
-        width: 20px;
-        margin-bottom: 5px;
-    }
+}
 
-    #m_menu.active span:first-child {
-        margin-top: -1px;
-    }
+#m_menu span {
+    width: 20px;
+    margin-bottom: 5px;
+}
 
-    .menu_bg ul li a {
-        font-size: 46px;
-    }
+#m_menu.active span:first-child {
+    margin-top: -1px;
+}
 
+.menu_bg ul li a {
+    font-size: 46px;
+}
 
+}
 
 
 
