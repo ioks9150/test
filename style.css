@@ -482,6 +482,9 @@ select {
 .p200 {
     padding-top: 200px;
 }
+.p120 {
+    padding-top: 120px;
+}
 .p100 {
     padding-top: 100px;
 }
@@ -681,6 +684,22 @@ ul.slides li img {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+.webbg1{
+    background: url(images/web_01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.webbg2{
+    background: url(images/branding_02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .blogbg img{
     max-width: 254px;
     max-height: auto;
