@@ -629,7 +629,9 @@ select {
     width: auto;
     height: auto;
 }
-
+.c_center{
+    text-align: center;
+}
 ul.slides li img {
     width: 100%;
     height: auto;
