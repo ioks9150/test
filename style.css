@@ -588,13 +588,30 @@ select {
     background-position: center 0;
     background-attachment: fixed;
 }
+.content-brand1 {
+    background: url(demo-images/oddstudio_main.jpg);
+    background-size: cover;
+    background-position: center 0;
+    background-attachment: fixed;
+}
+.content-brand2 {
+    background: url(demo-images/dadokdadok_main.jpg);
+    background-size: cover;
+    background-position: center 0;
+    background-attachment: fixed;
+}
 .content-brand3 {
     background: url(demo-images/bananaapp_main.jpg);
     background-size: cover;
     background-position: center 0;
     background-attachment: fixed;
 }
-
+.content-web1 {
+    background: url(demo-images/jeju_main.jpg);
+    background-size: cover;
+    background-position: center 0;
+    background-attachment: fixed;
+}
 .content-1330 {
     max-width: 1330px;
 }
@@ -709,6 +726,12 @@ ul.slides li img {
 
 .webbg2{
     background: url(images/branding_02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.webbg3{
+    background: url(images/web_03.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1871,11 +1894,13 @@ div.pp_default .pp_loaderIcon {
     
     
     .tit {
-        font-size: 48px;
+        font-size: 36px;
         letter-spacing: -0.5px;
     }
 
-    
+    .contxt2{
+        margin-bottom: 6px;
+    }
     
     
     
@@ -1884,7 +1909,10 @@ div.pp_default .pp_loaderIcon {
     #content{
         padding-bottom: 0;
     }
-    
+    .contxt{
+        font-size: 18px;
+        line-height: 23px;
+    }
     
     
     
