@@ -382,7 +382,9 @@ select {
     background-color: #fff;
     padding-bottom: 100px;
 }
-
+.f_bg {
+    background-color: #f7f7f7;
+}
 #content {
     padding-top: 110px;
     padding-bottom: 100px;
@@ -586,6 +588,12 @@ select {
     background-position: center 0;
     background-attachment: fixed;
 }
+.content-brand3 {
+    background: url(demo-images/bananaapp_main.jpg);
+    background-size: cover;
+    background-position: center 0;
+    background-attachment: fixed;
+}
 
 .content-1330 {
     max-width: 1330px;
@@ -680,6 +688,12 @@ ul.slides li img {
 
 .blogbg2{
     background: url(images/branding_02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blogbg3{
+    background: url(images/branding_03.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1183,7 +1197,7 @@ div.pp_default .pp_loaderIcon {
 .footer ul li {
     font-size: 16px;
     color: #6f6f6f;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .footer ul:after {
